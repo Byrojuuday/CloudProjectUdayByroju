@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <title>Create an Account</title>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    
+</head>
+  <body>
+  <br/>
+  <br/>
+  <br/>
+<div class="registration-page">
+
+  <div class="form">
+	
+    <form class="register-form"  action="{{url_for('registration')}}" method="POST" enctype="multipart/form-data">
+	  <h1>Create an Account</h1>
+	  <div><FONT COLOR="#008000">{{ message }}</FONT></div><br/>
+      <input type="text" name="username" id="username" placeholder="name"/>
+      <input type="password" name="password" id="password" placeholder="password"/>
+	  <input type="text" name="firstname" placeholder="first name"/>
+	  <input type="text" name="lastname" placeholder="Last name"/>
+      <input type="text" name="email" placeholder="email address"/>
+      <button>create</button>
+      <p class="message">Already registered? <a href="{{url_for('login')}}">Sign In</a></p>
+    </form>
+  </div>
+</div>
+  </body>
+</html>

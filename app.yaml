@@ -1,0 +1,5 @@
+runtime: python310
+env_variables:
+  TMP:  /var/tmp
+resources:
+  memory_gb: 4
